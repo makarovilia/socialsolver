@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-dk1b)*@r62&cutj#axq-5ly%&%-(t(w*!-p92ym!5x16om&&69'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -121,4 +121,5 @@ LOGIN_REDIRECT_URL = "/"
 LOGOUT_REDIRECT_URL = "/"
 LOGIN_URL = "/login/"
 MEDIA_URL = "/media/"
+
 MEDIA_ROOT = BASE_DIR / "media"
