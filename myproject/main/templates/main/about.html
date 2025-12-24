@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialSolver</title>
+    <link rel="stylesheet" href="{% static 'main/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'main/about.css'%}">
+
+</head>
+<body>
+     <header>
+        <a href="{% url 'home' %}"><img src="{% static 'main/img/ss.svg' %}" alt="Лого" class="ss"></a>
+        <h1>SocialSolver</h1>
+        <a href="{% url 'profile' %}"><img src="{% static 'main/img/profile.svg' %}" alt=""></a>
+    </header>
+    <main>
+        <h2>«SocialSolver» — Платформа краудсорсинга идей и решений социальных проблем</h2>
+        <p>Основная цель платформы — создать цифровое пространство для коллективного выявления, обсуждения и решения социальных проблем через механизмы краудсорсинга, голосования и обмена успешными практиками.
+        Система предназначена для активных граждан, представителей некоммерческих организаций, волонтёрских движений, органов местного самоуправления, а также для всех, кто заинтересован в позитивных изменениях в своей местности или обществе в целом. Платформа может использоваться для работы с различными тематиками: экология, урбанистика, социальная поддержка, образование, культура и другие общественно значимые направления.
+        </p>
+    </main>
+    <footer>
+        <h3>Контактная информация:</h3>
+        <div class="address">
+            <a href="tel:" >телефон: 89778924131</a>
+            <a href="mailto:">электронная почта: makarovilia82@gmail.com</a>
+        </div>
+    </footer>
+</body>
+</html>

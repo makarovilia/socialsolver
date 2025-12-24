@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>initiative card</title>
+    <link rel="stylesheet" href="{% static 'main/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'main/inc.css'%}">
+</head>
+<body>
+    <header>
+        <a href="{% url 'home' %}"><img src="{% static 'main/img/ss.svg' %}" alt="Лого" class="ss"></a>
+        <h1>SocialSolver</h1>
+        <a href="{% url 'profile' %}"><img src="{% static 'main/img/profile.svg' %}" alt=""></a>
+    </header>
+    <main>
+        {% block card %}
+        {% endblock %}
+        <a href="{% url 'add_comment' initiative.id %}" class="com">Добавить комментарий</a>
+    </main>
+
+</body>
+</html>

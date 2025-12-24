@@ -1,0 +1,36 @@
+<svg width="420" height="120" viewBox="0 0 420 120"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Цвета -->
+  <defs>
+    <style>
+      .primary { fill: #2D6CDF; }
+      .secondary { fill: #1F2937; }
+      .stroke { stroke: #2D6CDF; stroke-width: 2; }
+      text { font-family: Arial, Helvetica, sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Иконка -->
+  <g transform="translate(20,20)">
+    <!-- Центральное решение -->
+    <circle cx="40" cy="40" r="10" class="primary"/>
+
+    <!-- Люди -->
+    <circle cx="10" cy="40" r="6" class="secondary"/>
+    <circle cx="70" cy="40" r="6" class="secondary"/>
+    <circle cx="40" cy="10" r="6" class="secondary"/>
+    <circle cx="40" cy="70" r="6" class="secondary"/>
+
+    <!-- Связи -->
+    <line x1="16" y1="40" x2="30" y2="40" class="stroke"/>
+    <line x1="50" y1="40" x2="64" y2="40" class="stroke"/>
+    <line x1="40" y1="16" x2="40" y2="30" class="stroke"/>
+    <line x1="40" y1="50" x2="40" y2="64" class="stroke"/>
+  </g>
+
+  <!-- Название -->
+  <text x="130" y="68" font-size="36" fill="#1F2937" font-weight="600">
+    social<tspan fill="#2D6CDF">solver</tspan>
+  </text>
+</svg>
