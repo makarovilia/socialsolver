@@ -117,3 +117,13 @@ div a{
         height: 40px;
     }
 }
+
+.enter{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.enter1{
+    margin-top: 0;
+}
