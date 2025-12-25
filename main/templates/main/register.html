@@ -2,14 +2,12 @@
 
 {% block profile %}
     <h2>Регистрация</h2>
-
     <form method="post" enctype="multipart/form-data">
         {% csrf_token %}
         {{ form.as_p }}
         <button type="submit">Зарегистрироваться</button>
     </form>
 
-    <p>Уже есть аккаунт?
-        <a href="{% url 'login' %}">Войти</a>
-    </p>
+    <p class="enter">Уже есть аккаунт?  </p>
+    <a href="{% url 'login' %}" class="enter1">Войти</a>
 {% endblock %}
