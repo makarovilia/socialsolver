@@ -8,10 +8,15 @@ cd myproject
 python manage.py runserver
 
 Необходимое ПО:
+
 Django
+
 gunicorn
+
 psycopg2-binary
+
 whitenoise
+
 dj-database-ur
 
 Все их можно установить через pip install
