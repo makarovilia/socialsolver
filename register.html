@@ -1,0 +1,13 @@
+{% extends 'main/profile.html' %}
+
+{% block profile %}
+    <h2>Регистрация</h2>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+
+    <p class="enter">Уже есть аккаунт?  </p>
+    <a href="{% url 'login' %}" class="enter1">Войти</a>
+{% endblock %}
